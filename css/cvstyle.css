@@ -1,0 +1,259 @@
+@media screen and (max-width:470px){
+
+.skill .skills li span:nth-child(2) , .skill .prog li span:nth-child(2){
+        width: 100px;
+}
+.skill .lang{
+            flex-direction: column;
+        align-items: center;
+    justify-content: center;
+}
+
+    }
+
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+   
+}
+p{
+    letter-spacing: 2.0px;
+    font-size: larger;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition-duration: 1000ms ;
+}
+/* nav*/
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-left: 2.5%;
+    align-items: center;
+    position: fixed;
+    width: 95%;
+    z-index: 1;
+    font-size: x-large;
+}
+/* section start*/
+.section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: url(../src/pexels-math-331684.jpg);
+    background-size: cover;
+    height: 85vh;
+    position: relative;
+}
+.section::before{
+    content: '';
+    width: 100%;
+    height: 85vh;
+    position: absolute;
+    background-color: white;
+    opacity: 0.5;
+    background-size: cover;
+    z-index: 0;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 90px;
+    width: 100%;
+    z-index: 1;
+    color: rgb(0, 0, 0);
+    position: absolute;
+
+
+}
+.image {
+    width: 200px;
+    height: 200px;
+    
+}
+.image img{
+    clip-path: circle();
+    width: 100%;
+    height: 100%;
+}
+.section .head .socio {
+    margin-top: 10px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+}
+.section .head .socio i{
+    color: black;
+    font-size: x-large;
+    /* animation: jump 3000ms ; */
+}
+/* section end*/
+/* .section .head .socio i:hover{
+    color: rgb(235, 230, 230);
+    font-size: x-large;
+    transform: translatey(-10px);
+ 
+    
+} */
+/* start skill */
+.skill{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(125, 125, 125, 0.318); 
+    width: calc(100% - 40px);
+    height: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+    z-index: 1;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+.skill .about{
+    padding: 20px;
+    letter-spacing: 1.2;
+}
+/* skill part*/
+.skill .skills , .prog , .education ,.bio{
+    margin-bottom: 20px;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    height: fit-content;
+}
+@media  (max-width:370px) {
+    .skill .skills , .prog {
+        padding: 20px;
+    }
+    
+}
+
+.skill  ul{
+    display: block;
+    margin-right: 10px;
+}
+
+.skill  h2 , i {
+display: inline;
+margin-left: 10px;
+}
+.skill  ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-top: 5px;
+
+}
+.skill  li span:nth-child(1){
+width: 100px
+}
+.skill li span:nth-child(2){
+    background-color: aqua;
+    width: 250px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.skill  p {
+    font-size: large;
+    letter-spacing: normal;
+line-height: 1.52;
+}
+/* start lang part*/
+.skill .lang{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.skill .lang i{
+
+    font-size: 30px;
+    transform: translateY(-20px);
+}
+.skill .lang .en {
+    text-align: center;
+    margin: 20px;
+}
+.skill .lang .en span{
+background-color: white;
+clip-path: circle();
+padding: 20px;
+}
+.skill .lang  span .s{
+    padding: 10px;
+    background-color: gray;
+    clip-path: circle();
+}
+
+.skill .lang h3{
+    background-color: white;
+    border-radius: 10px;
+    width: 100px;
+    align-self: center;
+    text-align: center;
+}
+/* end lang*/
+/* start bio & eduction parts*/
+.skill .bio{
+    transform: translateX(-110px);
+}
+
+@media screen and (max-width:1000px){
+.skill .bio{
+    transform: translateX(10px);
+}
+
+}
+.skill .bio h4{
+    display: inline;
+    font-size: 18px;
+}
+.skill .education span ,.bio span{
+    margin-top:20px ;
+
+}
+.skill .education span:not(:first-child), .bio span:not(:first-child){
+    margin-left: 40px;
+}
+.skill .education p , .bio p{
+    display: inline;
+    margin-left: 10px;
+}
+.skill .education span:nth-child(1) i , .bio span:nth-child(1) i{
+    font-size: 30px;
+}
+/* end of bio and education part*/
+
+@keyframes jump {
+    0%{
+        transform: translatey(0px);
+
+
+    }
+    50%{
+        transform: translatey(-10px);
+
+
+    }
+    100%{
+        transform: translateY(0px);
+    }
+
+    
+}
